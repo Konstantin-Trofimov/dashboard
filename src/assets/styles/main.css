@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Racing+Sans+One&family=Roboto:wght@400;500;700&display=swap');
+
+
+@import './base.css';
+
+#app {
+  max-width: 1440px;
+  margin: 1rem auto 0;
+  font-weight: normal;
+  border-radius: 20px;
+  box-shadow: 0px 33px 43px rgba(0, 0, 0, 0.1), 0px 9.94853px 12.9632px rgba(0, 0, 0, 0.0651589), 0px 4.13211px 5.38427px rgba(0, 0, 0, 0.05), 0px 1.4945px 1.94738px rgba(0, 0, 0, 0.0348411);
+}
+
+main {
+  min-height: 190px;
+  background: var(--c-blue-green);
+  border-radius: 0 0 20px 20px;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 120px 0 64px;
+}
+
+

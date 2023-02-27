@@ -1,0 +1,1 @@
+export const sortingData = ( x, count = 0 ) => x.filter((_, i) => i % 2 === count)
