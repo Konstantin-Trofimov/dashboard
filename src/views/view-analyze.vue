@@ -4,7 +4,7 @@
    <div class="analyze-wrap">
     <BlockSidebar @sort="onSort" />
     
-    <BlockDashboard @search="onSearch" :ips="searchData" />
+    <BlockDashboard @search="onSearch" :ips="searchedData" />
    </div>
   </div>
  </div>
@@ -29,7 +29,7 @@ export default {
   return {
    ips: json, // data from server
    sortedBy: 'all',
-   searchedData: {},
+   search: {},
   }
  },
  methods: {
@@ -37,7 +37,7 @@ export default {
    this.sortedBy = command
   },
   onSearch(query) { 
-   this.searchedData = query
+   this.search = query
   },
  },
  computed: {
@@ -55,8 +55,8 @@ export default {
 
    return data // sorted by (even, odd, all)
   },
-  searchData() {   
-    return Object.keys(this.searchedData).length ? [...this.sortedData].filter(filterData(this.searchedData)) : this.sortedData 
+  searchedData() {   
+    return Object.keys(this.search).length ? [...this.sortedData].filter(filterData(this.search)) : this.sortedData 
     // search data on input fields    
   }
  },
