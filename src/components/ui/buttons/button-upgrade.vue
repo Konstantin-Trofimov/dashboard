@@ -13,7 +13,7 @@ export default {
  padding: 8px 9px;
  background: var(--c-white);
  font-size: .875rem;
- font-weight: 700;
+ font-weight: 400;
  text-transform: uppercase;
  color: var(--c-blue-base);
  background: var(--c-white);

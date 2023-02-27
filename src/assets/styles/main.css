@@ -23,4 +23,12 @@ main {
   padding: 0 120px 0 64px;
 }
 
+@media(max-width: 1024px) {
 
+  #app, main {
+    width: fit-content; 
+  }
+  header {
+    width: 100%;
+  }
+}
